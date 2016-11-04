@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Конвертер валют</title>
+</head>
+<body>
+
+<script>
+    var dollar = 22.56;
+    var euro = 28.36;
+    var sum=+prompt('Введите необходимую сумму для подсчета');
+    var currency=prompt('Выберите валюту, введя слово "доллар" или "евро"');
+    var result;
+
+    if (currency=='доллар'){
+        result = (sum / dollar).toFixed(2);
+                alert('Введенная сумма составит ' + result + ' долларов США');
+    }
+    else if (currency=='евро'){
+        result = (sum / euro).toFixed(2);
+        alert('Введенная сумма составит ' + result + ' евро');
+    }
+    else{
+        alert('Вы неверно выбрали валюту. Обновите окно и попробуйте заново.');
+    }
+</script>
+
+</body>
+</html>
